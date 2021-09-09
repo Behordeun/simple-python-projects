@@ -14,19 +14,19 @@ entry1 = tk.Entry (root, width=27)
 canvas1.create_window(150, 120, window=entry1)
 
 def installPackage ():
-    installPythonPackage = 'pip install' + entry1.get()
+    installPythonPackage = 'pip install ' + " " + entry1.get()
     
     os.system('start cmd /k ' + installPythonPackage)
 
 def uninstallPackage ():
     global uninstallPythonPackage
-    uninstallPythonPackage = 'pip uninstall' + entry1.get()
+    uninstallPythonPackage = 'pip uninstall ' + " " + entry1.get()
     
     os.system('start cmd /k ' + uninstallPythonPackage)
 
 def upgradePackage ():
     global upgradePythonPackage
-    upgradePythonPackage = 'pip install --upgrade' + entry1.get()
+    upgradePythonPackage = 'pip install --upgrade' + " " + entry1.get()
     
     os.system('start cmd /k ' + upgradePythonPackage)
 
@@ -39,4 +39,6 @@ canvas1.create_window(150, 230, window=button2)
 button3 = tk.Button(text= 'Upgrade Package', command=upgradePackage, bg='pink', fg='white', font=('helvetica', 12, 'bold'))
 canvas1.create_window(150, 310, window=button3)
 
+root.title("Python Installer Packager (pip)")
+root.geometry("400x400")
 root.mainloop()
