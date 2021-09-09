@@ -12,4 +12,5 @@ The current projects in this repository are:
 * Computer Power Control (Shut Down, Restart, Sleep and Hibernate)
 * Simple To-Do List and 
 * Wikipedia Search
+* Package Installer
 
