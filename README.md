@@ -13,5 +13,3 @@ The current projects in this repository are:
 * Simple To-Do List and 
 * Wikipedia Search
 
-
-

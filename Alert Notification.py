@@ -1,3 +1,5 @@
+# This is a simple application for alert system
+
 from tkinter import *
 from tkinter import messagebox
 
